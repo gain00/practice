@@ -1,0 +1,12 @@
+package ch01;
+
+public class Ex05 {
+	public static void main(String[] args) {
+		//String 문자
+		// 기본 데이터 타입이 아니다
+		String a;
+		a = "hello";
+		System.out.println(a);
+	
+	}
+}

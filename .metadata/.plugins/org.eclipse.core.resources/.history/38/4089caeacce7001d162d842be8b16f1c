@@ -1,0 +1,45 @@
+package day05;
+
+public class Array02 {
+	public static void main(String[] args) {
+		int nums[] = {1,3,4,5,6,8,555,67};//배열을 만들때는 변수에 ~s를 붙이거나 List를 붙인다
+		System.out.println(nums.length);//배열의 길이
+		int total = nums.length;
+		int sum = 0;
+		for(int i=0;i<total;i++) {
+			sum += nums[i];
+			
+		}
+		System.out.println(sum);
+		System.out.println((double)sum/total);//실수로 받고싶으면 형변환
+		
+		//for-each -> 기존 for문과 달리 요소수만큼 자동으로 반복된다
+		int sum02 = 0;
+		for(int j:nums) {
+			sum02 += j;
+		}
+		System.out.println(sum02);
+		
+		String fruits[] = {"딸기", "사과", "복숭아", "키위"};
+		for(String fruit:fruits) {
+			System.out.print(fruit+",");
+		}
+		//2차원 배열
+		int intArray[][] = new int [2][3];
+		intArray[0][0] = 1;
+		intArray[0][1] = 1;
+		intArray[0][2] = 1;
+		
+		intArray[1][0] = 100;
+		intArray[1][1] = 200;
+		intArray[1][2] = 300;
+		
+//		intArray[2][0] = 1; 안나옴 배열은 0부터 시작
+//		intArray[2][1] = 1;
+//		intArray[2][2] = 1;
+		
+		for(int[] x:intArray) {
+			System.out.println(x+",");
+		}
+	}
+}

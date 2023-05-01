@@ -1,0 +1,10 @@
+package ch03;
+
+public class ForEx06 {
+	public static void main(String[] args) {
+		
+		for (int a = 1; a <= 6; ) {
+			System.out.println("heeee");
+		}
+	}
+}
