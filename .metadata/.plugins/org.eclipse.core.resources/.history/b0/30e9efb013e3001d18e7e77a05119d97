@@ -1,0 +1,13 @@
+package ch01;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		int x = 1;
+		
+		System.out.println("hihihihihi");//쿠하하하하ㅏ핳
+		/*
+		 dsfsdfsdf
+		 sdfsfsdfsdf
+		 */
+	}
+}

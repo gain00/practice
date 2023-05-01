@@ -1,0 +1,10 @@
+package cho2;
+
+public class Ex08 {
+	public static void main(String[] args) {
+		// 삼항 연산자
+		// 조건식 ? 조건식의 결과가 true일때의 값 또는 연산식 : 조건식의 결과가 false;
+		// 조건식 - 결과가 논리형으로 나오도록 구성
+		System.out.println( 10 >0 ? 100 : -100);
+	}
+}

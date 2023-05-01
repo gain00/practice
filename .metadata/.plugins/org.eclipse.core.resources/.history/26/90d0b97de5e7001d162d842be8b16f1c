@@ -1,0 +1,20 @@
+package day05;
+
+public class ChangeMoney {
+	public static void main(String[] args) {
+		//50000,10000,5000,1000,500,100,50,10
+		int money = 1809880;
+		
+		//오만원36장,만원0장,오천원 1장, 천원 4장, 오백원 1장,백원 3장, 50원 한장, 10원 3장
+		
+		int wlvp[] = {50000,10000,5000,1000,500,100,50,10};
+		
+		for (int x = 0; x<wlvp.length; x++ ) {
+			if(money%wlvp[x]!=0) {
+				System.out.println(wlvp[x]+":"+money/wlvp[x]);
+				money = money%wlvp[x];
+			}
+		}
+		
+	}
+}
