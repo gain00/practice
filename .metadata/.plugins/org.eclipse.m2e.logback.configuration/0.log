@@ -1,0 +1,2 @@
+2023-05-02 06:25:56,727 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-05-02 06:26:36,514 [ForkJoinPool.commonPool-worker-3] WARN  org.eclipse.jgit.util.FS - locking FileBasedConfig[C:\Users\dlwjdwo\.gitconfig] failed after 5 retries
