@@ -29,7 +29,8 @@ class Computer extends Player {
 	}
 
 	public int turn() {
-		return (int) Math.random() * 3 + 1;
+		
+		return ((int) (Math.random() * 3)) + 1;
 	}
 
 }
@@ -42,11 +43,16 @@ public class RockPaperScissors {
 
 		while (true) {
 			int playerChoice = me.turn();
-			if (playerChoice == 4)
+			if (playerChoice == 4) {
 				break;
+			} else if (playerChoice != 1 && playerChoice != 2 && playerChoice != 3 && playerChoice != 4) {
+				System.out.println("잘못된 숫자를 입력하였습니다 다시입력해주세요");
+				continue;
+			}
 			System.out.println(me.getName() + rockPaperScissors[playerChoice - 1]);
 
 			int computerChoice = computer.turn();
+			
 			System.out.println(computer.getName() + rockPaperScissors[computerChoice - 1]);
 			if (playerChoice == computerChoice) {
 				System.out.println("비겻음");
